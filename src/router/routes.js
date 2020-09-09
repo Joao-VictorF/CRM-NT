@@ -43,62 +43,62 @@ const routes = [
 
       // Admin Routes
       {
-        path: "clients-list",
+        path: "clientes",
         name: "Clientes",
         component: ClientesList
       },
       {
-        path: "new-client",
+        path: "novo-cliente",
         name: "Novo cliente",
         component: NewClient
       },
       {
-        path: "products",
+        path: "produtos",
         name: "Produtos",
         component: ProductsList
       },
       {
-        path: "new-product",
+        path: "novo-produto",
         name: "Novo produto",
         component: NewProduct
       },
       {
-        path: "edit-product/:id",
+        path: "editar-produto/:id",
         name: "Editar produto",
         component: NewProduct
       },
       {
-        path: "import-products",
+        path: "importar-produtos",
         name: "Importar produtos",
         component: ImportProducts
       },
       {
-        path: "client-details/:id",
+        path: "cliente/:id",
         name: "Dados do cliente",
         component: NewClient
       },
       {
-        path: "cotacoes-list",
+        path: "cotacoes",
         name: "Cotações",
         component: CotacoesList
       },
       {
-        path: "new-cotacao",
+        path: "nova-cotacao",
         name: "Nova cotação",
         component: NewCotacao
       },
       {
-        path: "payment-methods-list",
+        path: "formas-de-pagamento",
         name: "Formas de pagamento",
         component: PaymentMethodsList
       },
       {
-        path: "new-payment-method",
+        path: "nova-forma-de-pagamento",
         name: "Nova forma de pagamento",
         component: NewPaymentMethod
       },
       {
-        path: "edit-payment-method/:id",
+        path: "editar-forma-de-pagamento/:id",
         name: "Editar forma de pagamento",
         component: NewPaymentMethod
       },

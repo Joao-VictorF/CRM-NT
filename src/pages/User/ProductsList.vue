@@ -26,7 +26,7 @@
 
     <v-row justify="end">
       <v-col cols="2">
-        <router-link to="/new-product">
+        <router-link to="/novo-produto">
           <v-btn color="success">
             <i class="ti-plus"></i>
             Novo produto
@@ -37,7 +37,7 @@
       <v-spacer></v-spacer>
 
       <v-col lg="4" md="5" sm="6">
-        <router-link to="/import-products">
+        <router-link to="/importar-produtos">
           <v-btn color="success">
             <i class="ti-import"></i>
             Importar lista de produtos
@@ -248,7 +248,7 @@ export default {
       this.deleteModal = true;
     },
     editProduct(productId) {
-      this.$router.push('/edit-product/' + productId);
+      this.$router.push('/editar-produto/' + productId);
     },
     notifySuccessVue(verticalAlign, horizontalAlign) {
       this.$notify({

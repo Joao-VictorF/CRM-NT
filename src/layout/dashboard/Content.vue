@@ -1,12 +1,8 @@
 <template>
-  <div class="content">
-    <div class="container-fluid">
-        <transition name="fade" mode="out-in">
-          <!-- your content here -->
-          <router-view :key="this.$route.fullPath"></router-view>
-        </transition>
-    </div>
-  </div>
+  <transition name="fade" mode="out-in">
+    <!-- your content here -->
+    <router-view :key="this.$route.fullPath"></router-view>
+  </transition>
 </template>
 <script>
 export default {};

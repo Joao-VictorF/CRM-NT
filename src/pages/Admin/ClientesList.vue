@@ -2,7 +2,7 @@
   <v-container>
     <v-row justify="end">
       <v-col cols="2">
-        <router-link to="/new-client">
+        <router-link to="/novo-cliente">
           <v-btn color="success">
             <i class="ti-plus"></i>
             Novo cliente

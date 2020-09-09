@@ -25,7 +25,7 @@
     </v-row>
 
     <div class="new-div">
-       <router-link to="/new-payment-method">
+       <router-link to="/nova-forma-de-pagamento">
         <v-btn color="success">
           <i class="ti-plus"></i>
           Nova forma de pagamento
@@ -176,7 +176,7 @@ export default {
       this.deleteModal = true;
     },
     editPayment(pm) {
-      this.$router.push('/edit-payment-method/' + pm.id);
+      this.$router.push('/editar-forma-de-pagamento/' + pm.id);
     }
   },
   mounted() {

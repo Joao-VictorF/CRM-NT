@@ -2,7 +2,7 @@
   <v-container>
     <v-row justify="end">
       <v-col xl="2" lg="3" md="3" cols="3">
-        <router-link to="/new-cotacao">
+        <router-link to="/nova-cotacao">
           <v-btn color="success">
             <i class="ti-plus"></i>
             Nova cotação

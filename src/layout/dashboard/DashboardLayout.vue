@@ -5,10 +5,10 @@
       <template slot="links">
         <sidebar-link to="/dashboard" name="Dashboard" icon="ti-panel"/>
         
-        <sidebar-link to="/clients-list" name="Clientes" icon="ti-layout-list-thumb"/>
-        <sidebar-link to="/products" name="Produtos" icon="ti-package"/>
-        <sidebar-link to="/cotacoes-list" name="Cotações" icon="ti-package"/>
-        <sidebar-link to="/payment-methods-list" name="Condição de pagamento" icon="ti-money"/>
+        <sidebar-link to="/clientes" name="Clientes" icon="ti-layout-list-thumb"/>
+        <sidebar-link to="/produtos" name="Produtos" icon="ti-package"/>
+        <sidebar-link to="/cotacoes" name="Cotações" icon="ti-package"/>
+        <sidebar-link to="/formas-de-pagamento" name="Condição de pagamento" icon="ti-money"/>
 
 
 
@@ -28,7 +28,7 @@
     <!-- <side-bar v-else>
       <template slot="links">
         <sidebar-link to="/dashboard" name="Dashboard" icon="ti-panel"/>
-        <sidebar-link to="/products" name="Produtos" icon="ti-package"/>
+        <sidebar-link to="/produtos" name="Produtos" icon="ti-package"/>
         <sidebar-link to="/account" name="Perfil" icon="ti-user"/>
       </template>
       <mobile-menu>
