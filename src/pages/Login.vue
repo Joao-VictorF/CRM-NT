@@ -44,7 +44,7 @@
                     width="3"
                     color="white">
                   </v-progress-circular>
-                  <span v-else>Entrar</span>
+                  <span v-else class="white--text">Entrar</span>
                 </v-btn>
               </v-col>
             </v-row>
