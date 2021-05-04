@@ -12,7 +12,7 @@
       <div class="logo">
         <a href="#" class="simple-text">
             <div class="logo-img">
-                <img src="/logo.jpg" alt="">
+                <img src="/logo.png" alt="">
             </div>
           {{title}}
         </a>
@@ -44,7 +44,7 @@ export default {
   props: {
     title: {
       type: String,
-      default: "CRM - NT Consulting"
+      default: "BZ Representações"
     },
     backgroundColor: {
       type: String,

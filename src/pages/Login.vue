@@ -7,7 +7,7 @@
 
       <v-col
       xl="5" lg="5" md="6" sm="10" cols="10">
-        <div>
+        <v-card>
           <h1 class=" text-center pt-4 login-title">
             CRM
           </h1>
@@ -16,7 +16,6 @@
             ref="form" class="login-form" v-model="valid" lazy-validation>
             <v-text-field 
               class="login-input"
-              background-color="white"    
               v-model="user.email"
               :rules="[rules.required]"
               label="Email"
@@ -25,7 +24,6 @@
 
             <v-text-field 
               class="login-input mt-2"
-              background-color="white"    
               v-model="user.password"
               :rules="[rules.required]"
               :append-icon="showPassword ? 'mdi-eye' : 'mdi-eye-off'"
@@ -38,7 +36,7 @@
             <v-row justify="center" no-gutters>
               <v-col class="center-column" lg="4" md="4" sm="5" cols="5">
                 <v-btn block
-                  :disabled="!valid || loading" color="#9cbd31" dark class="loginBtn" @click="login()">
+                  :disabled="!valid || loading" color="#006ecb" class="loginBtn" @click="login()">
                   <v-progress-circular
                     v-if="loading"
                     indeterminate
@@ -57,7 +55,7 @@
               </p>
             </div>
           </v-form>
-        </div>
+        </v-card>
       </v-col>
     </v-row>
 </template>
@@ -77,8 +75,8 @@ export default {
         email: v => /.+@.+\..+/.test(v) || 'Informe um email válido!',
       },
       user: {
-        email: "crm@admin.com",
-        password: "a1b2c3d4"
+        email: "", // crm@admin.com 
+        password: "" // a1b2c3d4
       }
     };
   },
@@ -118,8 +116,8 @@ export default {
   }
 
   .degrade-background {
-    background: rgb(217,217,217);
-    background: linear-gradient(125deg, rgba(217,217,217,1) 0%, rgba(170,170,170,1) 50%, rgba(189,189,189,1) 50%);
+    background: rgb(240,240,240);
+    background: linear-gradient(125deg, rgba(240,240,240,1) 0%, rgba(210,210,210,1) 50%);
   }
 
   .start-column {
@@ -142,7 +140,6 @@ export default {
 
   .login-title {
     letter-spacing: 2px;
-    color: white;
     font-size: 35pt;
     font-weight: 400;
   }
